@@ -16,15 +16,6 @@ def border3(x, y):
 def func_border4(x, y):
     return 0
 
-def norm(cur_u, prev_u):
-    max = 0
-    for i in range(cur_u.shape[0]):
-        for j in range(cur_u.shape[1]):
-            if abs(cur_u[i, j] - prev_u[i, j]) > max:
-                max = abs(cur_u[i, j] - prev_u[i, j])
-
-    return max
-
 
 def liebman( x, y, h, eps):
     N = len(x)
